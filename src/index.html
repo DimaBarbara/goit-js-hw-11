@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework</title>
-    <link href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <script src="./js/pixabay-api.js"></script>
-    <script src="./js/render-function.js"></script>
-    <script src="./main.js"></script>
+    <div class="container">
+      <input
+        class="input"
+        type="text"
+        placeholder="Search images..."
+        id="textInput"
+      />
+      <button class="button">Search</button>
+    </div>
+    <div id="loading" class="loader"></div>
+    <ul class="gallery"></ul>
+    <script type="module" src="./js/pixabay-api.js"></script>
+    <script type="module" src="./js/render-function.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
