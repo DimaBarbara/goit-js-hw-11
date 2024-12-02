@@ -8,6 +8,7 @@ const API_KEY = "47343073-38824ad25c719e3c94b2dfcbe";
 const btn = document.querySelector(".button");
 const inp = document.querySelector(".input");
 const loadingElement = document.getElementById("loading");
+const gallery = document.querySelector(".gallery");
 
 btn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -20,7 +21,9 @@ btn.addEventListener("click", (event) => {
         });
         return;
     }
-     loadingElement.style.display = "block";
+    loadingElement.style.display = "block";
+    gallery.innerHTML = "";
+    
     const searchParams = new URLSearchParams({
         key: `${API_KEY}`,
         q: query,

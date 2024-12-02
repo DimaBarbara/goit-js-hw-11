@@ -91,7 +91,7 @@
   border: 2px solid #fff;
   box-sizing: border-box;
   animation: rotation 2s linear infinite;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .loader::after,
 .loader::before {
